@@ -7,6 +7,8 @@ const progressBarFull = document.getElementById("progressBarFull");
 const game = document.getElementById("game");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
+const loader = document.getElementById("loader");
+
 
 let currentQuestion = {};
 let acceptingAnswer = false;
@@ -59,6 +61,9 @@ startGame = () => {
     score = 0;
 
     availableQuestion = [...questions];
+
+    loader.classList.add("hidden");
+    game.classList.remove("hidden");
 
     getNewQuestion()
 };
