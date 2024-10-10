@@ -1,5 +1,5 @@
 const highScoresList = document.getElementById("highScoresList");
-const highScores = JSON.parse(localStorage.getItem("highScores"))  || [];
+const highScores = JSON.parse(localStorage.getItem("highScore"))  || [];
 
 const list = document.createElement("li");
 
